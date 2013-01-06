@@ -6,8 +6,6 @@ include('lib/whitelist.php');
 $whitelist = new Whitelist('whitelist');
 $whitelist->Add('google.com'); # Add a Custom entry address.
 
-debug($whitelist);
-
 $site = 'google.be'; # Example string to test against
 
 # Verify against WhiteList
