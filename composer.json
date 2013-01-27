@@ -1,8 +1,8 @@
 {
-    "name": "modularr/yaml-front-matter",
+    "name": "modularr/whitelist",
     "type": "library",
-    "description": "YAML-FrontMatter is a simple to use PHP only FrontMatter type parser Library.",
-    "keywords": ["php","parser","parsing","frontmatter","metadata"],
+    "description": "This is a very simple PHP Whitelist Library.",
+    "keywords": ["php","whitelist"],
     "homepage": "http://modularr.com",
     "license": "UNLICENSE",
     "authors": [
