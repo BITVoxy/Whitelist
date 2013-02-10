@@ -6,7 +6,7 @@
  * @package Whitelist
  * @license http://unlicense.org UnLicense
  * @link https://github.com/Blaxus
- * @link http://daviddhont.com/donate/
+ * @link http://daviddhont.com/
  */
 class Whitelist
 {
