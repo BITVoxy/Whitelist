@@ -23,7 +23,7 @@ class Whitelist
      *
      * @param $file NULL not required
      */
-    public function __Construct($file=NULL)
+    public function __construct($file=NULL)
     {
         # Only if initialized by default.
         if($file != NULL)
@@ -88,9 +88,16 @@ class Whitelist
      */
     private function Read($file)
     {
-        $handle = fopen($file, 'r');
-        $data   = fread($handle, filesize($file));
-        fclose($handle);
-        return $data;
+        if (function_exists('file_get_contents'))
+        {
+            return file_get_contents($file);
+        }
+        else
+        {
+            $handle = fopen($file, 'r');
+            $data   = fread($handle, filesize($file));
+            fclose($handle);
+            return $data;
+        }
     }
 }
