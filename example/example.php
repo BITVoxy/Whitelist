@@ -1,6 +1,6 @@
 <?php
 # Load the Class
-include('lib/whitelist.php');
+include('../Whitelist.php');
 
 # Setup a New WhiteList
 $whitelist = new Whitelist('whitelist');
