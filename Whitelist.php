@@ -71,33 +71,12 @@ class Whitelist
     public function Load($file)
     {
         # Read File
-        $string = $this->Read($file);
+        $string = file_get_contents($file);
         
         # Split Items into the Array
-        $this->whitelisted = preg_split("/\r\n/", $string);
+        $this->whitelisted = array_map('trim', explode("\n", $string));
         
         # Return Whitelist in case someone wants to check it.
         return $this->whitelisted;
-    }
-    
-    /**
-     * return Read a File and return the data.
-     * 
-     * @param $file
-     * @return $data
-     */
-    private function Read($file)
-    {
-        if (function_exists('file_get_contents'))
-        {
-            return file_get_contents($file);
-        }
-        else
-        {
-            $handle = fopen($file, 'r');
-            $data   = fread($handle, filesize($file));
-            fclose($handle);
-            return $data;
-        }
     }
 }
