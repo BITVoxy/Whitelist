@@ -42,6 +42,9 @@ class Whitelist
      */
     public function Verify($input)
     {
+        # Dormalize data.
+        $input = strtolower($input);
+        
         # Verify the Input Against the Array
         if(in_array($input,$this->whitelisted))
         {
@@ -75,6 +78,9 @@ class Whitelist
         
         # Split Items into the Array
         $this->whitelisted = array_map('trim', explode("\n", $string));
+        
+        # Lowercase all entries to Normalise data
+        $this->whitelisted = array_map('strtolower', $this->whitelisted);
         
         # Return Whitelist in case someone wants to check it.
         return $this->whitelisted;
