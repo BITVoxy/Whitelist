@@ -11,4 +11,4 @@ You are also free to contribute if you want.
 ### Notes:
 - It is a Whitelist class, not a AntiSpam Class. Even though that's what I use my Whitelist for.
 - The Whitelist separates items read from a file by newlines.
-- Feel free to send me any feedback, requests.
+- Feel free to send me any feedback.
