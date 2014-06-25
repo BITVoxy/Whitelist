@@ -2,11 +2,10 @@
 /**
  * This is a very simple PHP Whitelist Library.
  * 
- * @author David D'hont <info@daviddhont.com>
+ * @author Blaxus
  * @package Whitelist
  * @license http://unlicense.org UnLicense
- * @link https://github.com/Blaxus
- * @link http://daviddhont.com/
+ * @link https://github.com/Modularr
  */
 class Whitelist
 {
