@@ -8,7 +8,10 @@
     "authors": [
         {
             "name": "David D'hont",
-            "email": "admin@daviddhont.com"
+            "email": "blaxus@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": ["src/", "src/Blog.php"]
+    }
 }
