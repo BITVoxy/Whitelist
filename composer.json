@@ -12,6 +12,6 @@
         }
     ],
     "autoload": {
-        "classmap": ["src/", "src/Blog.php"]
+        "classmap": ["src/", "src/Whitelist.php"]
     }
 }
